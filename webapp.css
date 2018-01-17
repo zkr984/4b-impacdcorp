@@ -3,6 +3,16 @@
 
 <<<<<<< HEAD
 =======
+#mole{
+border-radius: 50%;
+background-color: black
+}
+.body{
+background-image: images/jacksworld.jpg
+}
+.grid{
+	align-content:center
+	}
 >>>>>>> c6a4689a23486fcc9af3995c8b16369e255d8000
 body{
 	background-image: url("images/jacksworld.jpg");
