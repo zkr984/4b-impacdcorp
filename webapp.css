@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+<<<<<<< HEAD
 
 #mole{
 border-radius: 50%;
@@ -11,3 +12,12 @@ background-image: images/jacksworld.jpg
 .grid{
 	align-content:center
 	}
+=======
+body{
+	background-image: url("images/jacksworld.jpg");
+}
+.mole{
+	border-radius: 50%;
+	background-color: black;
+}
+>>>>>>> c3f8dfc41b7854ae3b831c0d09045ca6e3a1f59c
