@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.mole{
+#mole{
 border-radius: 50%;
 background-color: black
 }
 .body{
 background-image: images/jacksworld.jpg
 }
+.grid{
+	align-content:center
+	}
