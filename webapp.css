@@ -1,23 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
-<<<<<<< HEAD
 
-#mole{
-border-radius: 50%;
-background-color: black
-}
-.body{
-background-image: images/jacksworld.jpg
-}
-.grid{
-	align-content:center
-	}
-=======
 body{
 	background-image: url("images/jacksworld.jpg");
+	color: white;
 }
-.mole{
+.grid{
+	align-content:center;
+	}
+#mole{
+	width: 60px;
+	height:60px;
 	border-radius: 50%;
-	background-color: black;
+	background-color: white;
 }
->>>>>>> c3f8dfc41b7854ae3b831c0d09045ca6e3a1f59c
+
