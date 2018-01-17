@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
-
-.mole{
-border-radius: 50%;
-background-color: black;
+body{
+	background-image: url("images/jacksworld.jpg");
 }
-.body{
-background-image: images/jacksworld.jpg;
+.mole{
+	border-radius: 50%;
+	background-color: black;
 }
