@@ -20,6 +20,7 @@ function addScore5() {
 // Random Function
 function start() {
 		var molePicker = 
+		[
 			"mole+1",
 			"mole+1",
 			"mole+1",
