@@ -18,9 +18,10 @@ body{
 	align-content:center;
 	}
 #mole{
-	width: 60px;
-	height:60px;
+	width: 90px;
+	height:90px;
 	border-radius: 50%;
 	background-color: white;
+	padding: 50px;
 }
 
