@@ -8,8 +8,8 @@ function addScore1() {
 	currentScore++;
 	document.getElementById("score").value = currentScore;
 }
-
-
+	
+	
 /*
 Add 5 Function
 function addScore5() {
@@ -43,8 +43,18 @@ function start() {
 			
 		}
 		//Random Place Generator
+		
+}
+function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
 		var randomPlaceY = Math.floor(Math.random()*3)+1;
 		var place = "(" + randomPlaceX + "," + randomPlaceY + ")";
-		alert(place)
-}
+		return place;
+		}
+
+function moveMoleAround() {
+			var coords = coord();
+			document.getElementById("mole");
+		}
+		setInterval(moveMoleAround, 1000);
+		
