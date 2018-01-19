@@ -2,25 +2,23 @@
 /* CSS Document */
 
 
-#mole{
-border-radius: 50%;
-background-color: black
-}
 .grid{
 	align-content:center
 	}
 
 body{
-	background-image: url("images/jacksworld.jpg");
+	background-image: url("images/sundae.jpg");
 	color: white;
 }
 .grid{
 	align-content:center;
 	}
 #mole{
-	width: 60px;
-	height:60px;
+	width: 110px;
+	height:110px;
 	border-radius: 50%;
 	background-color: white;
+	padding: 50px;
+	background-image: url('images/jackcreep.jpg');
 }
 
