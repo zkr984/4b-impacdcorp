@@ -45,10 +45,16 @@ function start() {
 		//Random Place Generator
 		
 }
+
+function placeMole() {
+	var id = coord()
+	document.getElementById(id).setAttribute("class", "mole");
+}
+
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
 		var randomPlaceY = Math.floor(Math.random()*3)+1;
-		var place = "(" + randomPlaceX + "," + randomPlaceY + ")";
+		var place = "mole" + randomPlaceX + randomPlaceY;
 		return place;
 		}
 
