@@ -19,6 +19,8 @@ body{
 	border-radius: 50%;
 	background-color: white;
 	margin: 20px;
-	background-image:url('images/jackcreep.jpg')
+	background-image:url('images/jackcreep.jpg');
+	padding: 50px;
+	background-image: url('images/jackcreep.jpg');
 }
 
