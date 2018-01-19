@@ -7,8 +7,9 @@
 	}
 
 body{
-	background-image: url("images/sundae.jpg");
+	background-image: url("images/jacksworld.jpg");
 	color: white;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif
 }
 .grid{
 	align-content:center;
@@ -18,7 +19,15 @@ body{
 	height:110px;
 	border-radius: 50%;
 	background-color: white;
-	padding: 50px;
-	background-image: url('images/jackcreep.jpg');
+	margin: 14px;
+	background-image:url('images/jackcreep.jpg');
+	padding: 75px;
+
+
 }
+#start{
+	width: 100px;
+	height: 50px;
+	background-image: url("images/start.png");
+	}
 

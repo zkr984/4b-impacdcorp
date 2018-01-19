@@ -19,12 +19,18 @@ function addScore5() {
 
 // Random Function
 function start() {
-		var molePicker = [
+		var molePicker = 
+		[
 			"mole+1",
 			"mole+1",
 			"mole+1",
 			"mole+1",
 			"mole+1",
+			"mole+0",
+			"mole+0",
+			"mole+0",
+			"mole+0",
+			"mole+0",
 			//"mole+5"  There are 5 +1 to make +1 more common. +5 not intergrated yet
 			];
 			
@@ -36,4 +42,9 @@ function start() {
 		//alert("this worked");
 			
 		}
+		//Random Place Generator
+		var randomPlaceX = Math.floor(Math.random()*5)+1;
+		var randomPlaceY = Math.floor(Math.random()*3)+1;
+		var place = "(" + randomPlaceX + "," + randomPlaceY + ")";
+		alert(place)
 }
