@@ -43,8 +43,8 @@ function start() {
 			
 		}
 		//Random Place Generator
-		var randomPlaceX = Math.floor(Math.random()*4)+1;
-		var randomPlaceY = Math.floor(Math.random()*4)+1;
+		var randomPlaceX = Math.floor(Math.random()*5)+1;
+		var randomPlaceY = Math.floor(Math.random()*3)+1;
 		var place = "(" + randomPlaceX + "," + randomPlaceY + ")";
 		alert(place)
 }
