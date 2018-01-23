@@ -6,9 +6,18 @@
 <!--Stylesheet-->
 <link rel="stylesheet" type="text/css" href="webapp.css">
 <!--JavaScript-->
-<script type="text/javascript" src="webapp.js"></script>
+<script type="text/javascript" src="webapp.js">
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
 <!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
 </head>
 
 <body>
