@@ -37,6 +37,27 @@ function start() {
 		//Random Place Generator
 		
 }
+// Add Score Functions
+function addScore1() {
+		while (true) {
+			var x = document.getElementsByTagName("button");
+			if ( x === document.getElementByClassName("active").className) {
+			currentScore++;
+			}
+			else {
+			currentScore + 0;
+			}
+		}
+	document.getElementById("score").value = currentScore;
+}
+	
+	
+/*
+Add 5 Function
+function addScore5() {
+	currentScore = currentScore + 5
+}
+*/
 
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
@@ -50,9 +71,18 @@ function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
+
+			document.getElementById(coords).addEventListener( "click", function() {
+				currentScore++;
+			});
+			setTimeout(removeMoles,3000);
+						}
+
 			
 	// Interval Variable
 	var interval = 1000;
 		setInterval(moveMoleAround, interval);
 
-
+function removeMoles() {
+	
+}
