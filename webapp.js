@@ -46,17 +46,17 @@ function start() {
 		
 }
 
-function placeMole() {
-	var id = coord();
-	document.getElementById(id).setAttribute("class", "mole");
-}
-
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
 		var randomPlaceY = Math.floor(Math.random()*3)+1;
 		var place = "mole" + randomPlaceX + randomPlaceY;
 		return place;
 		}
+		
+function placeMole() {
+	var id = coord(); 
+	document.getElementById(id).setAttribute("class", "mole");
+}
 
 function moveMoleAround() {
 			var coords = coord();
@@ -67,5 +67,12 @@ function moveMoleAround() {
 	// Interval Variable
 	var interval = 1000
 		setInterval(moveMoleAround, interval);
-		
+	//Timer
+	    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);	
 

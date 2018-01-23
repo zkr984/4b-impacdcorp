@@ -9,7 +9,7 @@
 body{
 	background-image: url("images/jacksworld.jpg");
 	color: white;
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 }
 .grid{
 	align-content:center;
