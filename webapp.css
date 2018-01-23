@@ -49,3 +49,18 @@ body{
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	color: white;
 	}
+	#linkbutton{
+		width:1200px;
+		height: 700px;
+		background-image:url('images/sundae.jpg');
+		font-size:100px;
+		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
+		#menubutton{
+		width:500px;
+		height: 500px;
+		border-radius: 50%;
+		font-size:36px;
+		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+		background-image: url('images/jackcreep.jpg')}
+		
+
