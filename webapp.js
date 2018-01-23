@@ -1,21 +1,5 @@
 // JavaScript Document
 
-// Define Score Variable
-var currentScore = 0;
-
-// Add Score Functions
-function addScore1() {
-	currentScore++;
-	document.getElementById("score").value = currentScore;
-}
-	
-	
-/*
-Add 5 Function
-function addScore5() {
-	currentScore = currentScore + 5
-}
-*/
 
 // Random Function
 function start() {
@@ -73,5 +57,16 @@ function moveMoleAround() {
 	// Interval Variable
 	var interval = 1000;
 		setInterval(moveMoleAround, interval);
+<<<<<<< HEAD
 
 
+=======
+	//Timer
+	    var timeleft = 45;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);	
+	

@@ -7,16 +7,40 @@
 <link rel="stylesheet" type="text/css" href="webapp.css">
 <!--JavaScript-->
 <script type="text/javascript" src="webapp.js">
+// Define Score Variable
+var currentScore = 0;
+
+// Add Score Functions
+function addScore1() {
+	currentScore++;
+	document.getElementById("score").value = currentScore;
+}
+	
+	
+/*
+Add 5 Function
+function addScore5() {
+	currentScore = currentScore + 5
+}
+*/
 
 </script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 </head>
-
 <body>
+<div id="startpage">
+<p id='introp'>Welcome to the game of: WHAC-A-JACC</p>
+<button id='startbutton'><a href='#game'>START<a></button>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="game">
 <!--Add your HTML here-->
- 
+ <p id="title">WHAC A JACC</p>
 <p> The game will end in <span id="countdowntimer">45</span> Seconds</p>
 <button onClick="start()" id="start"></button>
 <button onClick="coord()"></button>
@@ -56,7 +80,7 @@
 		</td>
 	</tr>
 </table>
-
+</div>
           
 </body>
 </html>
