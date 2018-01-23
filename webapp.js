@@ -68,7 +68,7 @@ function moveMoleAround() {
 	var interval = 1000
 		setInterval(moveMoleAround, interval);
 	//Timer
-	    var timeleft = 10;
+	    var timeleft = 45;
     var downloadTimer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
