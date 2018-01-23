@@ -53,10 +53,7 @@ function coord() {
 		return place;
 		}
 		
-function placeMole() {
-	var id = coord(); 
-	document.getElementById(id).setAttribute("class", "mole");
-}
+
 
 function moveMoleAround() {
 			var coords = coord();
