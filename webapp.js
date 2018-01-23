@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // Define Score Variable
-var currentScore = 0
+var currentScore = 0;
 
 // Add Score Functions
 function addScore1() {
@@ -47,7 +47,7 @@ function start() {
 }
 
 function placeMole() {
-	var id = coord()
+	var id = coord();
 	document.getElementById(id).setAttribute("class", "mole");
 }
 
