@@ -62,8 +62,7 @@ function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
-			alert(coords);
-			}
+						}
 			
 	// Interval Variable
 	var interval = 1000;
