@@ -64,3 +64,4 @@ function moveMoleAround() {
 		}
 		setInterval(moveMoleAround, 1000);
 		
+}
