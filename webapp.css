@@ -14,13 +14,12 @@ body{
 .grid{
 	align-content:center;
 	}
-#mole{
+.void{
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
-	background-color: white;
-	margin: 14px;
-	background-image:url('images/jackcreep.jpg');
+	background-color:black;
+	margin: 14px;	
 	padding: 75px;
 
 
