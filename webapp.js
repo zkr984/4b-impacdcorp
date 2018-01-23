@@ -61,11 +61,12 @@ function coord() {
 function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
-			document.getElementById(coords).color="black";
+			document.getElementById(coords).className="active";
+			alert(coords);
 			}
 			
 	// Interval Variable
-	var interval = 1000
+	var interval = 1000;
 		setInterval(moveMoleAround, interval);
 		
 
