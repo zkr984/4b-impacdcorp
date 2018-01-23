@@ -60,8 +60,11 @@ function coord() {
 
 function moveMoleAround() {
 			var coords = coord();
-			document.getElementById("mole");
-		}
-		setInterval(moveMoleAround, 1000);
+	//		document.getElementById("mole");
+			document.getElementById(coords).color="black";
+			}
+			
+	// Interval Variable
+	var interval = 1000
+		setInterval(moveMoleAround, interval);
 		
-}
