@@ -1,6 +1,6 @@
 // JavaScript Document
 
-
+var key = locked;
 // Random Function
 function start() {
 		//Timer
@@ -45,14 +45,11 @@ function coord() {
 		return place;
 		}
 		
-
-
+		
 function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
-			setTimeout(document.getElementById(coords).className="void",3000);
-						}
 			
 	// Interval Variable
 	var interval = 1000;
