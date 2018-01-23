@@ -40,8 +40,8 @@ function start() {
 // Add Score Functions
 function addScore1() {
 		while (true) {
-			var x = document.getElementsByTagName(button);
-			if ( var x == document.getElementByClassName("active").className) {
+			var x = document.getElementsByTagName("button");
+			if ( x === document.getElementByClassName("active").className) {
 			currentScore++;
 			}
 			else {
@@ -72,11 +72,16 @@ function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
-			setTimeout(document.getElementById(coords).className="void",3000);
+			document.getElementById(coords).addEventListener( "click", function() {
+				currentScore++;
+			});
+			setTimeout(removeMoles,3000);
 						}
 			
 	// Interval Variable
 	var interval = 1000;
 		setInterval(moveMoleAround, interval);
 
-
+function removeMoles() {
+	
+}
