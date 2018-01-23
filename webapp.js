@@ -76,4 +76,4 @@ function moveMoleAround() {
     if(timeleft <= 0)
         clearInterval(downloadTimer);
     },1000);	
-
+	
