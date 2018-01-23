@@ -3,6 +3,14 @@
 
 // Random Function
 function start() {
+		//Timer
+	    var timeleft = 45;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);	
 		var molePicker = 
 		[
 			"mole+1",
@@ -43,17 +51,11 @@ function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
+			setTimeout(document.getElementById(coords).className="void",3000);
 						}
 			
 	// Interval Variable
 	var interval = 1000;
 		setInterval(moveMoleAround, interval);
-	//Timer
-	    var timeleft = 45;
-    var downloadTimer = setInterval(function(){
-    timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft <= 0)
-        clearInterval(downloadTimer);
-    },1000);	
-	
+
+
