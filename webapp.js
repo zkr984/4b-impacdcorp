@@ -44,7 +44,7 @@ function start() {
 }
 // Add Score Functions
 function addScore1() {
-		while (true) {
+		/*while (true) {
 			var x = document.getElementsByTagName("button");
 			if ( x === document.getElementByClassName("active").className) {
 			currentScore++;
@@ -57,7 +57,7 @@ function addScore1() {
 }
 	
 	
-/*
+
 Add 5 Function
 function addScore5() {
 	currentScore = currentScore + 5
