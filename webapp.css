@@ -59,9 +59,10 @@ body{
 		width:500px;
 		height: 500px;
 		border-radius: 50%;
-		font-size:36px;
+		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 		background-image: url('images/jackcreep.jpg');
 		color: purple;}
-		
+		#skinshop{
+			font-size:50px}
 
