@@ -1,6 +1,7 @@
 // JavaScript Document
 
 var key = locked;
+var inter;
 // Random Function
 function start() {
 		//Timer
@@ -28,6 +29,9 @@ function start() {
 			
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
 		var  jack = molePicker[randomNumber];
+		
+	var interval = 1000;
+		inter = setInterval(moveMoleAround, 1000);
 		
 	
 		if  (jack == "mole+1") {
@@ -67,25 +71,29 @@ function coord() {
 		}
 		
 		 var currentScore = 0;
+	var something;	 
+		 
 function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
+	//alert("hi")
 			document.getElementById(coords).className="active";
 
-			document.getElementById(coords).addEventListener( "click", function() { currentScore++;});
+			document.getElementById(coords).addEventListener( "click", function() {currentScore++});
 			
-			
+			something = setTimeout(removeMoles, 1000);
+
 						}
 
 			
 	// Interval Variable
-	var interval = 1000;
-		setInterval(moveMoleAround, interval);
+	
 
 function removeMoles() {
 	
 
 	var array = document.getElementsByClassName("active");
+	
 	for( var i = 0; i < array.length; i++) {
 		array[i].setAttribute("class", "void");
 	}
