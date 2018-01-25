@@ -43,7 +43,7 @@ function start() {
 		
 }
 // Add Score Functions
-function addScore1() {
+//function addScore1() {
 		/*while (true) {
 			var x = document.getElementsByTagName("button");
 			if ( x === document.getElementByClassName("active").className) {
