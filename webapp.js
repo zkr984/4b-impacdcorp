@@ -9,9 +9,10 @@ function start() {
     var downloadTimer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft <= 0)
+    },1000);
+	    if(timeleft == 0) {
         clearInterval(downloadTimer);
-    },1000);	
+	}
 		var molePicker = 
 		[
 			"mole+1",
