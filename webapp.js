@@ -10,8 +10,9 @@ function start() {
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
     },1000);
-	    if(timeleft == 0) {
+	    if(timeleft === 0) {
         clearInterval(downloadTimer);
+		clearInterval(inter);
 	}
 		var molePicker = 
 		[
@@ -34,7 +35,7 @@ function start() {
 	var interval = 1000;
 		inter = setInterval(moveMoleAround, 1000);
 		
-	
+
 		if  (jack == "mole+1") {
 		//alert("this worked");
 			
