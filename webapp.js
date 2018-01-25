@@ -66,16 +66,15 @@ function coord() {
 		return place;
 		}
 		
-		
+		 var currentScore = 0;
 function moveMoleAround() {
 			var coords = coord();
 	//		document.getElementById("mole");
 			document.getElementById(coords).className="active";
 
-			document.getElementById(coords).addEventListener( "click", function() {
-				currentScore++;
-			});
-			setTimeout(removeMoles,3000);
+			document.getElementById(coords).addEventListener( "click", function() { currentScore++;});
+			
+			
 						}
 
 			
@@ -85,4 +84,11 @@ function moveMoleAround() {
 
 function removeMoles() {
 	
+
+	var array = document.getElementsByClassName("active");
+	for( var i = 0; i < array.length; i++) {
+		array[i].setAttribute("class", "void");
+	}
+
+
 }
