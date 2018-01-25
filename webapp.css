@@ -63,5 +63,9 @@ body{
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 		background-image: url('images/jackcreep.jpg');
 		color: purple;}
+		#skinshopall{
+			font-size:70px;
+			content-align: center;
+			}
 		
 
