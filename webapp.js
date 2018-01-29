@@ -1,7 +1,6 @@
 // JavaScript Document
+ var currentScore = 0;
 
-var key = locked;
-var inter;
 // Random Function
 function start() {
 		//Timer
@@ -71,7 +70,7 @@ function coord() {
 		return place;
 		}
 		
-		 var currentScore = 0;
+		
 		 
 function moveMoleAround() {
 			var coords = coord();
