@@ -72,7 +72,6 @@ function coord() {
 		}
 		
 		 var currentScore = 0;
-	var something;	 
 		 
 function moveMoleAround() {
 			var coords = coord();
@@ -80,12 +79,13 @@ function moveMoleAround() {
 	//alert("hi")
 			document.getElementById(coords).className="active";
 
-			document.getElementById(coords).addEventListener( "click", function() {currentScore++});
+			document.getElementById(coords).addEventListener( "click", function() {
+				currentScore++;
+				document.getElementById("score").value = currentScore;
+			});
 			
-			something = setTimeout(removeMoles, 1000);
-
-						}
-
+			setTimeout(removeMoles, 1000);
+}
 			
 	// Interval Variable
 	
