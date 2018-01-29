@@ -101,3 +101,7 @@ function removeMoles() {
 
 
 }
+function deathmole(){
+		timeleft === 0;
+	}
+
