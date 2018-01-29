@@ -40,7 +40,7 @@ body{
 
 	}
 .deathmole{
-	background-image:url('images/jackcreep.jpg');
+	background-image:url('images/sadjack.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
@@ -50,7 +50,7 @@ body{
 
 	}
 .badmole{
-	background-image:url('images/jackcreep.jpg');
+	background-image:url('images/creeperjack.jpg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
