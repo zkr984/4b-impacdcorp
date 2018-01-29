@@ -32,8 +32,7 @@ function start() {
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
 		var  jack = molePicker[randomNumber];
 		
-	var interval = 1000;
-		inter = setInterval(moveMoleAround, 1000);
+	setInterval(moveMoleAround, 1000);
 		
 
 		if  (jack == "mole+1") {
