@@ -16,9 +16,20 @@ function start() {
 		//Timer
 		
 	    var timeleft = 45;
+
      downloadTimer = setInterval(timeCheck,1000);
 	
 	 
+
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    },1000);
+	    if(timeleft <= 0) {
+        clearInterval(downloadTimer);
+		clearInterval(inter);
+	}
+
 		var molePicker = 
 		[
 			"mole+1",
