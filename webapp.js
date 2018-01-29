@@ -9,7 +9,7 @@ function start() {
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
     },1000);
-	    if(timeleft === 0) {
+	    if(timeleft <= 0) {
         clearInterval(downloadTimer);
 		clearInterval(inter);
 	}
