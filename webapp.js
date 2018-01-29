@@ -102,6 +102,8 @@ function removeMoles() {
 
 }
 function deathmole(){
-		timeleft === 0;
+		timeleft = 0;
+		alert('images/gameover.jpeg');
+		
 	}
 
