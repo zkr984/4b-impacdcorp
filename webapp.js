@@ -41,6 +41,12 @@ function start() {
 		//Random Place Generator
 		
 }
+/*function addScore11() {
+var class = document.getElementById("mole11").className;
+if (class == "active"){
+currentScore++;
+}
+}*/
 // Add Score Functions
 //function addScore1() {
 		/*while (true) {
@@ -62,6 +68,10 @@ function addScore5() {
 	currentScore = currentScore + 5
 }
 */
+function addScore1(){
+				currentScore++;
+				document.getElementById("score").value = currentScore;
+			}
 
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
@@ -78,10 +88,7 @@ function moveMoleAround() {
 	//alert("hi")
 			document.getElementById(coords).className="active";
 
-			document.getElementById(coords).addEventListener( "click", function() {
-				currentScore++;
-				document.getElementById("score").value = currentScore;
-			});
+			document.getElementById(coords).addEventListener( "click", addScore1 );
 			
 			setTimeout(removeMoles, 1000);
 }
@@ -95,7 +102,9 @@ function removeMoles() {
 	var array = document.getElementsByClassName("active");
 	
 	for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", addScore1);
 		array[i].setAttribute("class", "void");
+		
 	}
 
 
