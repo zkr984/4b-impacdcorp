@@ -1,10 +1,26 @@
 // JavaScript Document
  var currentScore = 0;
-
+var downloadTimer;
 // Random Function
+//Time Check Function
+
+function timeCheck(){
+    timeleft--;
+	  document.getElementById("countdowntimer").textContent = timeleft;
+	    if(timeleft <= 0){
+    clearInterval(downloadTimer);
+
+}
+}
 function start() {
 		//Timer
+		
 	    var timeleft = 45;
+
+     downloadTimer = setInterval(timeCheck,1000);
+	
+	 
+
     var downloadTimer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
@@ -13,6 +29,7 @@ function start() {
         clearInterval(downloadTimer);
 		clearInterval(inter);
 	}
+
 		var molePicker = 
 		[
 			"mole+1",
