@@ -1,6 +1,8 @@
 // JavaScript Document
  var currentScore = 0;
 var downloadTimer;
+var inter;
+var inter5;
 // Random Function
 //Time Check Function
 
@@ -13,6 +15,11 @@ function timeCheck(){
 }
 }
 function start() {
+	// add this event listener to all of the buttons
+	/*for
+	document.getElementById("mole" + x).addEventListener("click", function() {
+		removeEventListener(x);
+	}*/
 		//Timer
 		
 	    var timeleft = 45;
@@ -48,7 +55,8 @@ function start() {
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
 		var  jack = molePicker[randomNumber];
 		
-	setInterval(moveMoleAround, 1000);
+	inter = setInterval(moveMoleAround1, 1000);
+	inter5 = setInterval(moveMoleAround5, 5000);
 		
 
 		if  (jack == "mole+1") {
@@ -89,6 +97,10 @@ function addScore1(){
 				currentScore++;
 				document.getElementById("score").value = currentScore;
 			}
+function addScore5(){
+				currentScore = currentScore + 5;
+				document.getElementById("score").value = currentScore;
+			}
 
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*5)+1;
@@ -98,8 +110,18 @@ function coord() {
 		}
 		
 		
+function moveMoleAround5() {
+			var coords = coord();
+	//		document.getElementById("mole");
+	//alert("hi");
+			document.getElementById(coords).className="silver";
+
+			document.getElementById(coords).addEventListener( "click", addScore5 );
+			
+			setTimeout(removeMoles5, 500);
+}
 		 
-function moveMoleAround() {
+function moveMoleAround1() {
 			var coords = coord();
 	//		document.getElementById("mole");
 	//alert("hi")
@@ -107,13 +129,24 @@ function moveMoleAround() {
 
 			document.getElementById(coords).addEventListener( "click", addScore1 );
 			
-			setTimeout(removeMoles, 1000);
+			setTimeout(removeMoles1, 1000);
 }
 			
 	// Interval Variable
 	
+function removeMoles5() {
+	
 
-function removeMoles() {
+	var array = document.getElementsByClassName("silver");
+	
+	for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", addScore1);
+		array[i].setAttribute("class", "void");
+		
+	}
+}
+
+function removeMoles1() {
 	
 
 	var array = document.getElementsByClassName("active");
@@ -127,6 +160,11 @@ function removeMoles() {
 
 }
 function savecookies(){
+	alert("this will save cookies!");
+}
+function loadcookies(){
 	
-	}
-
+}
+function clearcookies(){
+	
+}
