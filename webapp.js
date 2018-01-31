@@ -159,9 +159,12 @@ function removeMoles1() {
 
 
 }
-function deathmole(){
-		timeleft = 0;
-		alert('images/gameover.jpeg');
-		
-	}
-
+function savecookies(){
+	alert("this will save cookies!");
+}
+function loadcookies(){
+	
+}
+function clearcookies(){
+	
+}
