@@ -3,6 +3,7 @@
 var downloadTimer;
 var inter;
 var inter5;
+var x;
 // Random Function
 //Time Check Function
 
@@ -16,9 +17,20 @@ function timeCheck(){
 }
 function start() {
 	// add this event listener to all of the buttons
-	/*for
-	document.getElementById("mole" + x).addEventListener("click", function() {
-		removeEventListener(x);
+/*	for (  x = 0; x < 6;  x++){
+	document.getElementById("mole1" + x).addEventListener("click", function() {
+		document.getElementById("mole1" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole1" + x).removeEventListener( "click", addScore1);});
+	}
+	for(  x = 0; x < 6; x++){
+	document.getElementById("mole2" + x).addEventListener("click", function() {
+		document.getElementById("mole2" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole2" + x).removeEventListener( "click", addScore1);});
+	}
+	for(  x = 0; x < 6; x++){
+	document.getElementById("mole3" + x).addEventListener("click", function() {
+		document.getElementById("mole3" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole3" + x).removeEventListener( "click", addScore1);});
 	}*/
 		//Timer
 		
