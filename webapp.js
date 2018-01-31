@@ -127,6 +127,11 @@ function removeMoles() {
 
 }
 function savecookies(){
+	alert("this will save cookies!");
+}
+function loadcookies(){
 	
-	}
-
+}
+function clearcookies(){
+	
+}
