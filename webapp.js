@@ -113,7 +113,7 @@ function coord() {
 function moveMoleAround5() {
 			var coords = coord();
 	//		document.getElementById("mole");
-	alert("hi");
+	//alert("hi");
 			document.getElementById(coords).className="silver";
 
 			document.getElementById(coords).addEventListener( "click", addScore5 );
