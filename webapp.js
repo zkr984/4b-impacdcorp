@@ -109,9 +109,7 @@ function removeMoles() {
 
 
 }
-function deathmole(){
-		timeleft = 0;
-		alert('images/gameover.jpeg');
-		
+function savecookies(){
+	
 	}
 
