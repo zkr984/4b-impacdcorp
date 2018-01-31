@@ -140,7 +140,7 @@ function removeMoles5() {
 	var array = document.getElementsByClassName("silver");
 	
 	for( var i = 0; i < array.length; i++) {
-		array[i].removeEventListener( "click", addScore1);
+		array[i].removeEventListener( "click", addScore5);
 		array[i].setAttribute("class", "void");
 		
 	}
