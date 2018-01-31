@@ -14,6 +14,23 @@
 <link rel="stylesheet" type="text/css" href="Skin CSS/forwJack.css">
 <!--JavaScript-->
 <script type="text/javascript" src="webapp.js">
+var highScore = 0;
+function savecookies(){
+	 var exdays= 69;
+	 highScore = currentScore + highScore;
+	 var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = highScore + " points";
+}
+}
+function loadcookies(){
+	
+}
+function clearcookies(){
+	
+}
+
 </script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">       
@@ -26,8 +43,8 @@
 <button id="menubutton"><a href='#shop'>SHOP</a></button>
 <br>
 <button onClick="savecookies()">SAVE COOKIES</button>
-<button onClick="loadcookies()">LOAD COOKIES</button>
-<button onClick="clearcookies()">CLEAR COOKIES</button>
+<!--<button onClick="loadcookies()">LOAD COOKIES</button>
+<button onClick="clearcookies()">CLEAR COOKIES</button>-->
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -72,8 +89,7 @@
 <p> The game will end in <span id="countdowntimer">45</span> Seconds</p>
 <button onClick="start()" id="start"></button>
 <button id="startbutton"><a href="#startpage">Menu</a></button>
-
-
+<p>Highscore: </p>
 <p>Score = </p><input id="score" value="0">
 <table width="1000px" height="850px" border="1">
 	<tr>
