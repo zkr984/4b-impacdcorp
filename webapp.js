@@ -163,8 +163,8 @@ function savecookies(){
 	alert("this will save cookies!");
 }
 function loadcookies(){
-	
+	alert("tis will load cookies soon");
 }
 function clearcookies(){
-	
+	alert("tis will clear cookies soon");
 }
