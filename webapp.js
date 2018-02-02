@@ -12,7 +12,8 @@ function timeCheck(){
 	  document.getElementById("countdowntimer").textContent = timeleft;
 	    if(timeleft <= 0){
     clearInterval(downloadTimer);
-
+	var saveScore = currentScore;
+	currentScore = 0;
 }
 }
 function start() {
@@ -173,17 +174,25 @@ function removeMoles1() {
 
 
 }
+var highScore = 0;
 function savecookies(){
-	alert("this will save cookies!");
+	 var exdays= 69;
+	 highScore = saveScore + highScore;
+	 var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = highScore + " points";
+}
 }
 function loadcookies(){
-	alert("tis will load cookies soon");
+	
 }
 function clearcookies(){
-	alert("tis will clear cookies soon");
+	
 }
-
 function skinchange(page, skin){
+	alert(page);
+	alert(skin);
 	document.getElementsById(page).setAttribute('href', skin);
 	}
 

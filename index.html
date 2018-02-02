@@ -15,22 +15,7 @@
 <link id= "9" rel="stylesheet" type="text/css" href="Skin CSS/stacheJack.css">
 <!--JavaScript-->
 <script type="text/javascript" src="webapp.js">
-var highScore = 0;
-function savecookies(){
-	 var exdays= 69;
-	 highScore = currentScore + highScore;
-	 var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = highScore + " points";
-}
-}
-function loadcookies(){
-	
-}
-function clearcookies(){
-	
-}
+
 
 </script>
 <!--jQuery-->
@@ -62,19 +47,19 @@ function clearcookies(){
     <th>Tier 3(600J)</th>
   </tr>
   <tr>
-    <td><button onClick= "skinchange('1', 'css/webapp.css')"><img src="images/jackcreep.jpg"/></button></td>
-    <td><button onClick= "skinchange('2', 'css/Skin CSS/jennaMarbles.css')"><img src="images/jennamarbles.jpeg"/></button></td>
-    <td><button onClick="skinchange('3', 'css/Skin CSS/flatJack.css')"><img src="images/flatjack.jpg"/></button></td>
+    <td><button onClick= "document.active.style.backgroundImage('images/jackcreep.jpg)"><img src="images/jackcreep.jpg"/></button></td>
+    <td><button onClick= "skinchange('2', 'Skin CSS/jennaMarbles.css')"><img src="images/jennamarbles.jpeg"/></button></td>
+    <td><button onClick="skinchange('3', 'Skin CSS/flatJack.css')"><img src="images/flatjack.jpg"/></button></td>
   </tr>
   <tr>
-    <td><button onClick="skinchange('4', 'css/Skin CSS/forwJack.css')"><img src="images/forwjack.jpg"/></button></td>
-    <td><button onClick="skinchange('5', 'css/Skin CSS/barfJack.css')"><img src="images/barfjack.jpeg"/></button></td>
-    <td><button onClick="skinchange('6', 'css/Skin CSS/emojiJack.css')"><img src="images/emojijack.jpg"/></button></td>
+    <td><button onClick="skinchange('4', 'Skin CSS/forwJack.css')"><img src="images/forwjack.jpg"/></button></td>
+    <td><button onClick="skinchange('5', 'Skin CSS/barfJack.css')"><img src="images/barfjack.jpeg"/></button></td>
+    <td><button onClick="skinchange('6', 'Skin CSS/emojiJack.css')"><img src="images/emojijack.jpg"/></button></td>
   </tr>
   <tr>
-    <td><button onClick="skinchange('7', 'css/Skin CSS/lwiay.css')"><img src="images/lwiay.jpg"/></button></td>
-    <td><button onClick="skinchange('8', 'css/Skin CSS/sfJack.css')"><img src="images/godjack.jpg"/></button></td>
-    <td><button onClick="skinchange('9', 'css/Skin CSS/stacheJack.css)"><img src="images/stachejack.jpeg"/></button></td>
+    <td><button onClick="skinchange('7', 'Skin CSS/lwiay.css')"><img src="images/lwiay.jpg"/></button></td>
+    <td><button onClick="skinchange('8', 'Skin CSS/sfJack.css')"><img src="images/godjack.jpg"/></button></td>
+    <td><button onClick="skinchange('9', 'Skin CSS/stacheJack.css)"><img src="images/stachejack.jpeg"/></button></td>
   </tr>
 </table>
 </div>
