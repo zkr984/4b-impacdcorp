@@ -12,12 +12,14 @@ function timeCheck(){
 	  document.getElementById("countdowntimer").textContent = timeleft;
 	    if(timeleft <= 0){
     clearInterval(downloadTimer);
-
+	var saveScore = currentScore;
+	currentScore = 0;
 }
 }
 function start() {
+
 	// add this event listener to all of the buttons
-		document.getElementById("mole11").addEventListener("click", function() {
+	/*	document.getElementById("mole11").addEventListener("click", function() {
 		document.getElementById("mole11").removeEventListener( "click", addScore5);
 		document.getElementById("mole11").removeEventListener( "click", addScore1);});
 		
@@ -76,6 +78,24 @@ function start() {
 		document.getElementById("mole35").addEventListener("click", function() {
 		document.getElementById("mole35").removeEventListener( "click", addScore5);
 		document.getElementById("mole35").removeEventListener( "click", addScore1);});
+
+	// add this event listener to all of the buttons
+	for (  x = 0; x < 6;  x++){
+	document.getElementById("mole1" + x).addEventListener("click", function() {
+		document.getElementById("mole1" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole1" + x).removeEventListener( "click", addScore1);});
+	}
+	for(  x = 0; x < 6; x++){
+	document.getElementById("mole2" + x).addEventListener("click", function() {
+		document.getElementById("mole2" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole2" + x).removeEventListener( "click", addScore1);});
+	}
+	for(  x = 0; x < 6; x++){
+	document.getElementById("mole3" + x).addEventListener("click", function() {
+		document.getElementById("mole3" + x).removeEventListener( "click", addScore5);
+		document.getElementById("mole3" + x).removeEventListener( "click", addScore1);});
+	}
+*/
 		//Timer
 		
 	    
@@ -217,17 +237,25 @@ function removeMoles1() {
 
 
 }
+var highScore = 0;
 function savecookies(){
-	alert("this will save cookies!");
+	 var exdays= 69;
+	 highScore = saveScore + highScore;
+	 var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = highScore;
+}
 }
 function loadcookies(){
-	alert("tis will load cookies soon");
+	
 }
 function clearcookies(){
-	alert("tis will clear cookies soon");
+	
 }
-
-function skinchange(skin){
-	document.getElementsByClassName("pagestyle" ).setAttribute('href', skin);
+function skinchange(page, skin){
+	alert(page);
+	alert(skin);
+	document.getElementsById(page).setAttribute('href', skin);
 	}
 
