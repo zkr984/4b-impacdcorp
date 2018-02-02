@@ -181,7 +181,7 @@ function clearcookies(){
 	alert("tis will clear cookies soon");
 }
 
-function skinchange(){
-	onClick
+function skinchange(skin){
+	document.getElementsByClassName("pagestyle" ).setAttribute('href', skin);
 	}
 
