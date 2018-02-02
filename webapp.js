@@ -183,7 +183,7 @@ function clearcookies(){
 	alert("tis will clear cookies soon");
 }
 
-function skinchange(skin){
-	document.getElementsByClassName("pagestyle" ).setAttribute('href', skin);
+function skinchange(page, skin){
+	document.getElementsById(page).setAttribute('href', skin);
 	}
 
