@@ -34,19 +34,21 @@ function start() {
 	}*/
 		//Timer
 		
-	    var timeleft = 45;
+	    
 
      downloadTimer = setInterval(timeCheck,1000);
 	
-	 
+	var timeleft = 45;
+	
+	var t=setInterval(countdown_timer, 1000); 
 
-    var downloadTimer = setInterval(function(){
-    timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-    },1000);
-	    if(timeleft <= 0) {
-        clearInterval(downloadTimer);
-		clearInterval(inter);
+	function countdown_timer()  {
+		document.getElementById("time").innerHTML = timeleft;
+		timeleft--;
+		if(timeleft == -1) {
+			clearInterval(t);
+			alert("Time's Up!");
+	  }
 	}
 
 		var molePicker = 
@@ -77,7 +79,7 @@ function start() {
 		}
 		//Random Place Generator
 		
-}
+} // end start function
 /*function addScore11() {
 var class = document.getElementById("mole11").className;
 if (class == "active"){
