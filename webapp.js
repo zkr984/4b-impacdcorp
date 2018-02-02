@@ -17,21 +17,65 @@ function timeCheck(){
 }
 function start() {
 	// add this event listener to all of the buttons
-/*	for (  x = 0; x < 6;  x++){
-	document.getElementById("mole1" + x).addEventListener("click", function() {
-		document.getElementById("mole1" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole1" + x).removeEventListener( "click", addScore1);});
-	}
-	for(  x = 0; x < 6; x++){
-	document.getElementById("mole2" + x).addEventListener("click", function() {
-		document.getElementById("mole2" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole2" + x).removeEventListener( "click", addScore1);});
-	}
-	for(  x = 0; x < 6; x++){
-	document.getElementById("mole3" + x).addEventListener("click", function() {
-		document.getElementById("mole3" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole3" + x).removeEventListener( "click", addScore1);});
-	}*/
+		document.getElementById("mole11").addEventListener("click", function() {
+		document.getElementById("mole11").removeEventListener( "click", addScore5);
+		document.getElementById("mole11").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole12").addEventListener("click", function() {
+		document.getElementById("mole12").removeEventListener( "click", addScore5);
+		document.getElementById("mole12").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole13").addEventListener("click", function() {
+		document.getElementById("mole13").removeEventListener( "click", addScore5);
+		document.getElementById("mole13").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole14").addEventListener("click", function() {
+		document.getElementById("mole14").removeEventListener( "click", addScore5);
+		document.getElementById("mole14").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole15").addEventListener("click", function() {
+		document.getElementById("mole15").removeEventListener( "click", addScore5);
+		document.getElementById("mole15").removeEventListener( "click", addScore1);});
+
+		document.getElementById("mole21").addEventListener("click", function() {
+		document.getElementById("mole21").removeEventListener( "click", addScore5);
+		document.getElementById("mole21").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole22").addEventListener("click", function() {
+		document.getElementById("mole22").removeEventListener( "click", addScore5);
+		document.getElementById("mole22").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole23").addEventListener("click", function() {
+		document.getElementById("mole23").removeEventListener( "click", addScore5);
+		document.getElementById("mole23").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole24").addEventListener("click", function() {
+		document.getElementById("mole24").removeEventListener( "click", addScore5);
+		document.getElementById("mole24").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole25").addEventListener("click", function() {
+		document.getElementById("mole25").removeEventListener( "click", addScore5);
+		document.getElementById("mole25").removeEventListener( "click", addScore1);});
+	
+		document.getElementById("mole31").addEventListener("click", function() {
+		document.getElementById("mole31").removeEventListener( "click", addScore5);
+		document.getElementById("mole31").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole32").addEventListener("click", function() {
+		document.getElementById("mole32").removeEventListener( "click", addScore5);
+		document.getElementById("mole32").removeEventListener( "click", addScore1);});
+	
+		document.getElementById("mole33").addEventListener("click", function() {
+		document.getElementById("mole33").removeEventListener( "click", addScore5);
+		document.getElementById("mole33").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole34").addEventListener("click", function() {
+		document.getElementById("mole34").removeEventListener( "click", addScore5);
+		document.getElementById("mole34").removeEventListener( "click", addScore1);});
+		
+		document.getElementById("mole35").addEventListener("click", function() {
+		document.getElementById("mole35").removeEventListener( "click", addScore5);
+		document.getElementById("mole35").removeEventListener( "click", addScore1);});
 		//Timer
 		
 	    
