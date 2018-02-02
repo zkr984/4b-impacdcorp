@@ -17,8 +17,8 @@ function timeCheck(){
 }
 }
 function start() {
-	// add this event listener to all of the buttons
-/*	for (  x = 0; x < 6;  x++){
+	 add this event listener to all of the buttons
+	for (  x = 0; x < 6;  x++){
 	document.getElementById("mole1" + x).addEventListener("click", function() {
 		document.getElementById("mole1" + x).removeEventListener( "click", addScore5);
 		document.getElementById("mole1" + x).removeEventListener( "click", addScore1);});
@@ -32,7 +32,7 @@ function start() {
 	document.getElementById("mole3" + x).addEventListener("click", function() {
 		document.getElementById("mole3" + x).removeEventListener( "click", addScore5);
 		document.getElementById("mole3" + x).removeEventListener( "click", addScore1);});
-	}*/
+	}
 		//Timer
 		
 	    
@@ -181,7 +181,7 @@ function savecookies(){
 	 var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = highScore + " points";
+    document.cookie = highScore;
 }
 }
 function loadcookies(){
