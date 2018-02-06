@@ -1,9 +1,9 @@
 // JavaScript Document
+//Defining Global Variable
  var currentScore = 0;
 var downloadTimer;
 var inter;
 var inter5;
-var x;
 var timeleft;
 var saveScore;
 
@@ -14,7 +14,7 @@ var highScore = 0;
 //Time Check Function
 
 
-function timeCheck(){
+/*function timeCheck(){
    for(timeLeft >0, timeLeft--) {
     timeleft--;
 	  document.getElementById("countdowntimer").textContent = timeleft;
@@ -29,18 +29,15 @@ function timeCheck(){
 
 }
 }
-
-function highScore(){
-if 	(highScore < currentScore){
-	
-	}
-}
+*/
 
 
+
+//starts Game
 function start() {
 
 	// add this event listener to all of the buttons
-	/*	document.getElementById("mole11").addEventListener("click", function() {
+		/*document.getElementById("mole11").addEventListener("click", function() {
 		document.getElementById("mole11").removeEventListener( "click", addScore5);
 		document.getElementById("mole11").removeEventListener( "click", addScore1);});
 		
@@ -121,7 +118,7 @@ function start() {
 		
 	    
 
-     downloadTimer = setInterval(timeCheck,1000);
+   //  downloadTimer = setInterval(timeCheck,1000);
 	
 	var timeleft = 45;
 	
@@ -132,8 +129,17 @@ function start() {
 		timeleft--;
 		if(timeleft == -1) {
 			clearInterval(t);
+			clearInterval(inter);
+			clearInterval(inter5);
 			alert("Time's Up!");
-			highScore();
+			
+		//makes HighScore
+			if 	(currentScore > highScore){
+	highScore = currentScore;
+	document.getElementById("highScore").value = highScore;
+	currentScore = 0;
+	}
+
 	  }
 	}
 
@@ -199,8 +205,8 @@ function addScore5(){
 			}
 
 function coord() {
-		var randomPlaceX = Math.floor(Math.random()*5)+1;
-		var randomPlaceY = Math.floor(Math.random()*3)+1;
+		var randomPlaceX = Math.floor(Math.random()*3)+1;
+		var randomPlaceY = Math.floor(Math.random()*5)+1;
 		var place = "mole" + randomPlaceX + randomPlaceY;
 		return place;
 		}
@@ -279,5 +285,5 @@ function skinchange(page, skin){
 	  if(timeleft <= 0){
     clearInterval(downloadTimer);
 	var saveScore = currentScore;
-	currentScore = 0;
+	currentScore = 0;}
 
