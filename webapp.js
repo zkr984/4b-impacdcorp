@@ -10,12 +10,10 @@ var saveScore;
 //Time Check Function
 
 function timeCheck(){
+   for(timeLeft >0, timeLeft--) {
     timeleft--;
 	  document.getElementById("countdowntimer").textContent = timeleft;
-	    if(timeleft <= 0){
-    clearInterval(downloadTimer);
-	var saveScore = currentScore;
-	currentScore = 0;
+	  
 }
 }
 function start() {
@@ -256,4 +254,8 @@ function skinchange(page, skin){
 	alert(skin);
 	document.getElementsById(page).setAttribute('href', skin);
 	}
+	  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+	var saveScore = currentScore;
+	currentScore = 0;
 
