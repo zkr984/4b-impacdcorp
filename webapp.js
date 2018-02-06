@@ -11,14 +11,19 @@ var saveScore;
 //Time Check/Timer Function
 
 function timeCheck(){
+   for(timeLeft >0, timeLeft--) {
     timeleft--;
 	  document.getElementById("countdowntimer").textContent = timeleft;
+<<<<<<< HEAD
 	    if(timeleft <= 0){
 			//stops timer
     clearInterval(downloadTimer);
 	//saves score
 	var saveScore = currentScore;
 	currentScore = 0;
+=======
+	  
+>>>>>>> 9de06060038bc90ac2d52ee567f1be2db5b814db
 }
 }
 function start() {
@@ -243,4 +248,8 @@ function skinchange(page, skin){
 	alert(skin);
 	document.getElementsById(page).setAttribute('href', skin);
 	}
+	  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+	var saveScore = currentScore;
+	currentScore = 0;
 
