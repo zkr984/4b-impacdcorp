@@ -23,7 +23,7 @@ body{
 	margin: 14px;	
 	padding: 75px;
 }
-/*Parameters for non-active tags*/
+/*Parameters for non-active tags (width, height, borders, margin, background color, and padding)*/
 #start{
 	width: 100px;
 	height: 50px;
@@ -37,17 +37,18 @@ body{
 	border-radius: 50%;
 	margin: 14px;	
 	padding: 75px;
-	}
-/**/
+}
+/*Parameters for active +1 tags (width, height, borders, margin, background color, and padding)*/
 	
-	.silver{
+.silver{
 	background-image:url('images/dogjack.jpeg');
 	width: 110px;
 	height:110px;
 	border-radius: 50%;
 	margin: 14px;	
 	padding: 75px;	
-	}
+}
+/*Parameters for active +5 tags (width, height, borders, margin, background color, and padding)*/
 .deathmole{
 	background-image:url('images/erin.jpeg');
 	width: 110px;
@@ -55,9 +56,8 @@ body{
 	border-radius: 50%;
 	margin: 14px;	
 	padding: 75px;
-
-
-	}
+}
+/*Parameters for active death tags (width, height, borders, margin, background color, and padding)*/
 .badmole{
 	background-image:url('images/sundae.jpg');
 	width: 110px;
@@ -65,34 +65,39 @@ body{
 	border-radius: 50%;
 	margin: 14px;	
 	padding: 75px;
-
-
-	}
-	#title{
-		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		font-size:24px;
-		color: white;
-		
-		}
+}
+/*Parameters for active -5 tags (width, height, borders, margin, background color, and padding)*/
+#title{
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size:24px;
+	color: white;	
+}
+/*Font, font size, and color for text of title*/
 #startpage{
 	font-size:xx-large;
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	color: white;
-	}
-	#linkbutton{
-		width:700px;
-		height: 500px;
-		background-image:url('images/sundae.jpg');
-		font-size:100px;
-		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
-		#menubutton{
-		width:300px;
-		height: 300px;
-		border-radius: 50%;
-		font-size:50px;
-		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-		background-image: url('images/jackcreep.jpg');
-		color: purple;}s
-		#skinshop{
-			font-size:50px}
-
+}
+/*Font, font size, and color for text of title*/
+#linkbutton{
+	width:700px;
+	height: 500px;
+	background-image:url('images/sundae.jpg');
+	font-size:100px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+/*Font, font size, and color for text of link button*/
+#menubutton{
+	width:300px;
+	height: 300px;
+	border-radius: 50%;
+	font-size:50px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	background-image: url('images/jackcreep.jpg');
+	color: purple;
+}
+/*Font, font size, and color for text of menu button*/
+#skinshop{
+	font-size:50px;
+}
+/*Font size of skinshop*/
