@@ -7,6 +7,7 @@ var inter5;
 var x;
 var timeleft;
 var saveScore;
+var highScore = 0;
 
 //Time Check/Timer Function
 
@@ -14,18 +15,24 @@ function timeCheck(){
    for(timeLeft >0, timeLeft--) {
     timeleft--;
 	  document.getElementById("countdowntimer").textContent = timeleft;
-<<<<<<< HEAD
 	    if(timeleft <= 0){
 			//stops timer
     clearInterval(downloadTimer);
 	//saves score
 	var saveScore = currentScore;
 	currentScore = 0;
-=======
-	  
->>>>>>> 9de06060038bc90ac2d52ee567f1be2db5b814db
+
+
 }
 }
+
+function highScore(){
+if 	(highScore < currentScore){
+	
+	}
+}
+
+
 function start() {
 
 	// add this event listener to all of the buttons
@@ -126,6 +133,7 @@ function start() {
 			clearInterval(t);
 			//Alerts when time is over
 			alert("Time's Up!");
+			highScore();
 	  }
 	}
 //Picks Type of Mole
