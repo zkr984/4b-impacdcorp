@@ -4,6 +4,8 @@ var downloadTimer;
 var inter;
 var inter5;
 var x;
+var timeleft;
+var saveScore;
 // Random Function
 //Time Check Function
 
@@ -137,10 +139,6 @@ function start() {
 	inter5 = setInterval(moveMoleAround5, 5000);
 		
 
-		if  (jack == "mole+1") {
-		//alert("this worked");
-			
-		}
 		//Random Place Generator
 		
 } // end start function
@@ -245,7 +243,7 @@ function savecookies(){
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = highScore;
-}
+
 }
 function loadcookies(){
 	
