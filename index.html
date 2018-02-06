@@ -23,10 +23,10 @@
 </script>
 </head>
 <body>
-<div id="startpage">
+<div id="startpage"><!--Identifies the buttons as the start page, allowing for broader CSS -->
 <p id="introp">Welcome to the game of: WHAC-A-JACC</p>
-<button id="linkbutton"><a href="#game">START</a></button>
-<button id="menubutton"><a href='#shop'>SHOP</a></button>
+<button id="linkbutton"><a href="#game">START</a></button><!--Links the button to the game, works with text adventure style -->
+<button id="menubutton"><a href='#shop'>SHOP</a></button><!-- Links the button to the skinshop-->
 <br>
 <button onClick="savecookies()">SAVE COOKIES</button>
 <!--<button onClick="loadcookies()">LOAD COOKIES</button>
@@ -37,10 +37,10 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div id='shopmenu'>
+<div id='shopmenu'><!-- Marks this part of the wesite for the link to identify-->
 <button><a href="#startpage">MENU</a></button>
 <h1 id="shop">SKINS</h1>
-<table id='skinshop' style="width:100%">
+<table id='skinshop' style="width:100%"><!--Sets up a template for each of the skins -->
   <tr>
     <td><button onClick= "document.active.style.backgroundImage('images/jackcreep.jpg)"><img src="images/jackcreep.jpg"/></button></td>
     <td><button onClick= "document.active.style.backgroundImage('images/jennamarbles.jpeg')"><img src="images/jennamarbles.jpeg"/></button></td>
@@ -64,18 +64,18 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div id="game">
+<div id="game"><!--Marks this for the link to identify -->
 <!--Add your HTML here-->
  <p id="title">WHAC A JACC</p>
-<p> The game will end in <span id="time">45</span> Seconds</p>
+<p> The game will end in <span id="time">45</span> Seconds</p><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
 <button onClick="start()" id="start"></button>
-<button id="startbutton"><a href="#startpage">Menu</a></button>
+<button id="startbutton"><a href="#startpage">Menu</a></button><!-- This button links to the menu-->
 <p>Highscore: </p>
 <p>Score = </p><input id="score" value="0">
-<table width="1000px" height="850px" border="1">
+<table width="1000px" height="850px" border="1"><!--The table sets up the grid for each mole button -->
 	<tr>
 		<td>
-			 <button id="mole11" onClick="addScore11()" class="void"></button>
+			 <button id="mole11" onClick="addScore11()" class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
 			 <button id="mole12" onClick="addScore12()" class="void"></button>
 			 <button id="mole13" onClick="addScore13()" class="void"></button>
 			 <button id="mole14" onClick="addScore14()" class="void"></button>
@@ -105,7 +105,7 @@
 	</tr>
 </table>
 </div>
-         <audio autoplay loop>
+         <audio autoplay loop><!--An autoplay loop plays music in the background -->
 		 <source src='alexanderhamilton.mp3' type='audio/mpeg'>
 		 </audio>
 </body>
