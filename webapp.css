@@ -80,19 +80,19 @@ body{
 	color: white;
 	}
 	#linkbutton{
-		width:1200px;
-		height: 700px;
+		width:700px;
+		height: 500px;
 		background-image:url('images/sundae.jpg');
 		font-size:100px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
 		#menubutton{
-		width:500px;
-		height: 500px;
+		width:300px;
+		height: 300px;
 		border-radius: 50%;
 		font-size:50px;
 		font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 		background-image: url('images/jackcreep.jpg');
-		color: purple;}
+		color: purple;}s
 		#skinshop{
 			font-size:50px}
 
