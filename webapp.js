@@ -6,20 +6,19 @@ var inter5;
 var x;
 var timeleft;
 var saveScore;
-<<<<<<< HEAD
+
 var highScore = 0;
 
 //Time Check/Timer Function
-=======
 // Random Function
 //Time Check Function
->>>>>>> 456601a335ea1db4abbb228ab687b7e9e9fe3747
+
 
 function timeCheck(){
    for(timeLeft >0, timeLeft--) {
     timeleft--;
 	  document.getElementById("countdowntimer").textContent = timeleft;
-<<<<<<< HEAD
+
 	    if(timeleft <= 0){
 			//stops timer
     clearInterval(downloadTimer);
@@ -28,9 +27,6 @@ function timeCheck(){
 	currentScore = 0;
 
 
-=======
-	  
->>>>>>> 456601a335ea1db4abbb228ab687b7e9e9fe3747
 }
 }
 
