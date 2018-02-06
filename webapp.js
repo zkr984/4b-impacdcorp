@@ -226,7 +226,7 @@ function moveMoleAround5() {
 function moveMoleAround1() {
 			var coords = coord();
 	//		document.getElementById("mole");
-	//alert("hi")
+	
 			document.getElementById(coords).className="active";
 
 			document.getElementById(coords).addEventListener( "click", addScore1 );
