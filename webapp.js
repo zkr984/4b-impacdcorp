@@ -286,4 +286,3 @@ function skinchange(page, skin){
     clearInterval(downloadTimer);
 	var saveScore = currentScore;
 	currentScore = 0;}
-
