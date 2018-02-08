@@ -28,9 +28,10 @@
 <p id="introp">Welcome to the game of: WHAC-A-JACC</p>
 <button id="linkbutton"><a href="#game">START</a></button><!--Links the button to the game, works with text adventure style -->
 <button id="menubutton"><a href="#shop">SHOP</a></button><!-- Links the button to the skinshop-->
-<button id="menubutton"><a href="#tutorial">TUTORIAL</a></button>
+<button id="menubutton"><a href="#tutorial">TUTORIAL</a></button><br>
+YOUR HIGH SCORE IS<input id="highScore" value="0">
 <br>
-<button onClick="savecookies()">SAVE COOKIES</button>
+<button onClick="savecookies()">SAVE SCORE</button>
 <!--<button onClick="loadcookies()">LOAD COOKIES</button>
 <button onClick="clearcookies()">CLEAR COOKIES</button>-->
 </div>
@@ -68,11 +69,9 @@
 
 <div id="game"><!--Marks this for the link to identify -->
 <!--Add your HTML here-->
- <p id="title">WHAC A JACC</p>
-<p> The game will end in <span id="time">45</span> Seconds</p><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
+ Time= <span id="time">45</span><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
 <button onClick="start()" id="start"></button>
 <button id="startbutton"><a href="#startpage">Menu</a></button><!-- This button links to the menu-->
-<p>Highscore: </p><input id="highScore" value="0">
 <p>Score = </p><input id="score" value="0">
 <table width="1000px" height="850px" border="1"><!--The table sets up the grid for each mole button -->
 	<tr>
