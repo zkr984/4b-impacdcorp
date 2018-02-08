@@ -6,7 +6,7 @@ var inter;
 var inter5;
 var timeleft;
 var saveScore;
-
+var array;
 var highScore = 0;
 
 //Time Check/Timer Function
@@ -35,7 +35,6 @@ var highScore = 0;
 
 //starts Game
 function start() {
-
 	// add this event listener to all of the buttons
 		/*document.getElementById("mole11").addEventListener("click", function() {
 		document.getElementById("mole11").removeEventListener( "click", addScore5);
@@ -120,8 +119,10 @@ function start() {
 
    //  downloadTimer = setInterval(timeCheck,1000);
 	
-	var timeleft = 45;
-	
+	timeleft = 45;
+		
+	inter = setInterval(moveMoleAround1, 1000);
+//	inter5 = setInterval(moveMoleAround5, 5000);
 	var t=setInterval(countdown_timer, 1000); 
 
 	function countdown_timer()  {
@@ -130,7 +131,7 @@ function start() {
 		if(timeleft == -1) {
 			clearInterval(t);
 			clearInterval(inter);
-			clearInterval(inter5);
+			//clearInterval(inter5);
 			alert("Time's Up!");
 			
 		//makes HighScore
@@ -160,14 +161,13 @@ function start() {
 			
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
 		var  jack = molePicker[randomNumber];
-		
-	inter = setInterval(moveMoleAround1, 1000);
-	inter5 = setInterval(moveMoleAround5, 5000);
+	
 		
 
 		//Random Place Generator
 		
 } // end start function
+
 /*function addScore11() {
 var class = document.getElementById("mole11").className;
 if (class == "active"){
@@ -197,11 +197,11 @@ function addScore5() {
 */
 function addScore1(){
 				currentScore++;
-				document.getElementById("score").value = currentScore;
+				document.getElementById("score").innerHTML = currentScore;
 			}
 function addScore5(){
 				currentScore = currentScore + 5;
-				document.getElementById("score").value = currentScore;
+				document.getElementById("score").innerHTML = currentScore;
 			}
 
 function coord() {
@@ -226,7 +226,8 @@ function moveMoleAround5() {
 function moveMoleAround1() {
 			var coords = coord();
 	//		document.getElementById("mole");
-	
+	//alert("hi");
+	//alert(coords);
 			document.getElementById(coords).className="active";
 
 			document.getElementById(coords).addEventListener( "click", addScore1 );
@@ -234,7 +235,7 @@ function moveMoleAround1() {
 			setTimeout(removeMoles1, 1000);
 }
 			
-	// Interval Variable
+	
 	
 function removeMoles5() {
 	
@@ -251,17 +252,16 @@ function removeMoles5() {
 function removeMoles1() {
 	
 
-	var array = document.getElementsByClassName("active");
-	
-	for( var i = 0; i < array.length; i++) {
+	array = document.getElementsByClassName("active");
+		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScore1);
 		array[i].setAttribute("class", "void");
 		
 	}
-
-
 }
+
 var highScore = 0;
+/*
 function savecookies(){
 	 var exdays= 69;
 	 highScore = saveScore + highScore;
@@ -281,9 +281,8 @@ function skinchange(page, skin){
 	alert(page);
 	alert(skin);
 	document.getElementsById(page).setAttribute('href', skin);
-	}
+	}*/
 	  if(timeleft <= 0){
     clearInterval(downloadTimer);
 	var saveScore = currentScore;
 	currentScore = 0;}
-
