@@ -121,7 +121,7 @@ function start() {
 	
 	timeleft = 45;
 		
-	inter = setInterval(moveMoleAround1, 1000);
+	inter = setInterval(moveMoleAround1,2000);
 //	inter5 = setInterval(moveMoleAround5, 5000);
 	var t=setInterval(countdown_timer, 1000); 
 
@@ -198,6 +198,12 @@ function addScore5() {
 function addScore1(){
 				currentScore++;
 				document.getElementById("score").innerHTML = currentScore;
+				array = document.getElementsByClassName("active");
+		for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", addScore1);
+		array[i].setAttribute("class", "void");
+		
+	}
 			}
 function addScore5(){
 				currentScore = currentScore + 5;
@@ -228,7 +234,7 @@ function moveMoleAround1() {
 	//		document.getElementById("mole");
 	//alert("hi");
 	//alert(coords);
-			document.getElementById(coords).className="active";
+			document.getElementById(coords).setAttribute("class", "active");
 
 			document.getElementById(coords).addEventListener( "click", addScore1 );
 			
@@ -242,7 +248,7 @@ function removeMoles5() {
 
 	var array = document.getElementsByClassName("silver");
 	
-	for( var i = 0; i < array.length; i++) {
+	for( var i = 0; i < array.length; i++) {x
 		array[i].removeEventListener( "click", addScore5);
 		array[i].setAttribute("class", "void");
 		
@@ -286,3 +292,11 @@ function skinchange(page, skin){
     clearInterval(downloadTimer);
 	var saveScore = currentScore;
 	currentScore = 0;}
+	
+	function clock(){
+		
+		
+		
+		
+		
+	}
