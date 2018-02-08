@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Web App</title>
-<h1>YOUR HIGH SCORE IS<p></p><h1>
+<h1>YOUR HIGH SCORE IS<p></p></h1>
 <!--Stylesheet-->
 <link id= "1" rel="stylesheet" type="text/css" href="webapp.css">
 <!--<link id= "8" rel="stylesheet" type="text/css" href="Skin CSS/sfJack.css">
@@ -23,6 +23,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">       
 </script>
 </head>
+<!--Add your HTML here-->
 <body>
 <div id="startpage"><!--Identifies the buttons as the start page, allowing for broader CSS -->
 <p id="introp">Welcome to the game of: WHAC-A-JACC</p>
@@ -65,47 +66,45 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<p align="left"><button id="startbutton"><a href="#startpage">Menu</a></button></p><!-- This button links to the menu-->
+<div id="sidebar"><!--This division is for information to be seen while playing-->
+	<p align="center" > The game will end in <span id="time"></span> Seconds</p><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
+	<p align="center"> <button onClick="start()" id="start"></button></p><!--This button starts the game-->
+	<p align="center">Score: <span id ="score"></span></p>
+</div>
 <div id="game"><!--Marks this for the link to identify -->
-<!--Add your HTML here-->
- <p id="title">WHAC A JACC</p>
-<p align="center"> The game will end in <span id="time">45</span> Seconds</p><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
-<p align="center"> <button onClick="start()" id="start"></button></p><!--This button starts the game-->
-<p align="center"><button id="startbutton"><a href="#startpage">Menu</a></button></p><!-- This button links to the menu-->
-<p align="center">Highscore: </p><p align="center"><input align="middle" id="highScore" value="0"></p><!--This displays the high score-->
-<p align="center">Score = </p><p align="center"><input id="score" value="0"></p><!--This displays the current score-->
-<table width="1000px" height="850px" border="1" align="center"><!--The table sets up the grid for each mole button -->
-	<tr>
-		<td>
-			 <button id="mole11"  class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
-			 <button id="mole12"  class="void"></button>
-			 <button id="mole13"  class="void"></button>
-			 <button id="mole14"  class="void"></button>
-			 <button id="mole15"  class="void"></button> 
-			 <br>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			 <button id="mole21"  class="void"></button>
-			 <button id="mole22"  class="void"></button> 
-			 <button id="mole23"  class="void"></button> 
-			 <button id="mole24"  class="void"></button> 
-			 <button id="mole25"  class="void"></button> 
-			 <br>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			 <button id="mole31"  class="void"></button>
-			 <button id="mole32"  class="void"></button>
-			 <button id="mole33"  class="void"></button>  
-			 <button id="mole34"  class="void"></button> 
-			 <button id="mole35"  class="void"></button> 
-			 <br>
-		</td>
-	</tr>
-</table>
+	<table width="1000px" height="850px" border="1" align="center"><!--The table sets up the grid for each mole button -->
+		<tr>
+			<td>
+			 	<button id="mole11"  class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
+			 	<button id="mole12"  class="void"></button>
+			 	<button id="mole13"  class="void"></button>
+			 	<button id="mole14"  class="void"></button>
+			 	<button id="mole15"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				 <button id="mole21"  class="void"></button>
+				 <button id="mole22"  class="void"></button> 
+			 	<button id="mole23"  class="void"></button> 
+			 	<button id="mole24"  class="void"></button> 
+			 	<button id="mole25"  class="void"></button> 
+				 <br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			 	<button id="mole31"  class="void"></button>
+			 	<button id="mole32"  class="void"></button>
+			 	<button id="mole33"  class="void"></button>  
+			 	<button id="mole34"  class="void"></button> 
+			 	<button id="mole35"  class="void"></button> 
+			 	<br>
+			</td>
+		</tr>
+	</table>
 </div>
          <audio autoplay loop><!--An autoplay loop plays music in the background -->
 		 	<source src="alexanderhamilton.mp3" type="audio/mpeg"></source>

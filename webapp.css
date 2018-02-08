@@ -1,21 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-.grid{
-	align-content:center
-	}
 /*Content aligned to center*/
+#sidebar{
+	float:left;
+	width:200px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#game{
+	align-content:center;
+	}
 body{
-	background-image: url("images/jacksworld.jpg");
+	/*Image for background*/
+	background-image: url("images/jacksworld.jpg"); 
 	color: white;
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
 	font-size:15px;
 }
-/*Image for background*/
-.grid{
-	align-content:center;
-	}
+
 .void{
 	width: 110px;
 	height:110px;
