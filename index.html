@@ -27,10 +27,9 @@
 <p id="introp">Welcome to the game of: WHAC-A-JACC</p>
 <button id="linkbutton"><a href="#game">START</a></button><!--Links the button to the game, works with text adventure style -->
 <button id="menubutton"><a href="#shop">SHOP</a></button><!-- Links the button to the skinshop-->
-<button id="menubutton"><a href="#tutorial">TUTORIAL</a></button><br>
-YOUR HIGH SCORE IS<input id="highScore" value="0">
+<button id="menubutton"><a href="#tutorial">TUTORIAL</a></button>
 <br>
-<button onClick="savecookies()">SAVE SCORE</button>
+<button onClick="savecookies()">SAVE COOKIES</button>
 <!--<button onClick="loadcookies()">LOAD COOKIES</button>
 <button onClick="clearcookies()">CLEAR COOKIES</button>-->
 </div>
@@ -68,11 +67,13 @@ YOUR HIGH SCORE IS<input id="highScore" value="0">
 
 <div id="game"><!--Marks this for the link to identify -->
 <!--Add your HTML here-->
- Time= <span id="time">45</span><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
-<button onClick="start()" id="start"></button>
-<button id="startbutton"><a href="#startpage">Menu</a></button><!-- This button links to the menu-->
-<p>Score = </p><input id="score" value="0">
-<table width="1000px" height="850px" border="1"><!--The table sets up the grid for each mole button -->
+ <p id="title">WHAC A JACC</p>
+<p align="center"> The game will end in <span id="time">45</span> Seconds</p><!-- Changing text timer that links to function in JS. Alerts when time reaches 0-->
+<p align="center"> <button onClick="start()" id="start"></button></p><!--This button starts the game-->
+<p align="center"><button id="startbutton"><a href="#startpage">Menu</a></button></p><!-- This button links to the menu-->
+<p align="center">Highscore: </p><p align="center"><input align="middle" id="highScore" value="0"></p><!--This displays the high score-->
+<p align="center">Score = </p><p align="center"><input id="score" value="0"></p><!--This displays the current score-->
+<table width="1000px" height="850px" border="1" align="center"><!--The table sets up the grid for each mole button -->
 	<tr>
 		<td>
 			 <button id="mole11"  class="void"></button><!--JS uses an array to choose a certain coordinate, which corresponds to the button id. -->
