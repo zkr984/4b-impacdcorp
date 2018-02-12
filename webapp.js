@@ -156,7 +156,7 @@ function start() {
 			"mole+0",
 			"mole+0",
 			"mole+0",
-			//"mole+5"  There are 5 +1 to make +1 more common. +5 not intergrated yet
+			//"mole+5"  There are 5 +1 to make +1 more common. 
 			];
 			
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
@@ -209,6 +209,10 @@ function addScore5(){
 				currentScore = currentScore + 5;
 				document.getElementById("score").innerHTML = currentScore;
 			}
+
+function deathScore(){
+	alert("YOU HIT ERIN! YOU LOST!");
+}
 
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*3)+1;
