@@ -165,7 +165,7 @@ function addScore5(){
 function deathScore(){
 	alert("YOU HIT ERIN! YOU LOST!");
 }
-
+function coord(){
 		var randomPlaceX = Math.floor(Math.random()*3)+1;
 		var randomPlaceY = Math.floor(Math.random()*5)+1;
 		var place = "mole" + randomPlaceX + randomPlaceY;
@@ -178,28 +178,7 @@ function deathScore(){
 //Creates a +1 mole		 
 
 		
-function moveMoleAround5() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
-			document.getElementById(coords).className="silver";
 
-			document.getElementById(coords).addEventListener( "click", addScore5 );
-			
-			setTimeout(removeMoles5, 500);
-}
-		 
-function moveMoleAround1() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
-	//alert(coords);
-			document.getElementById(coords).setAttribute("class", "active");
-
-			document.getElementById(coords).addEventListener( "click", addScore1 );
-			
-			setTimeout(removeMoles1, 1000);
-}
 			
 function moveMoleAroundDeath() {
 		var coords = coord();
