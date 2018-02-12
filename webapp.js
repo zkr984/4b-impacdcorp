@@ -35,90 +35,7 @@ var highScore = 0;
 
 //starts Game
 function start() {
-	// add this event listener to all of the buttons
-	//will be used later
-		/*document.getElementById("mole11").addEventListener("click", function() {
-		document.getElementById("mole11").removeEventListener( "click", addScore5);
-		document.getElementById("mole11").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole12").addEventListener("click", function() {
-		document.getElementById("mole12").removeEventListener( "click", addScore5);
-		document.getElementById("mole12").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole13").addEventListener("click", function() {
-		document.getElementById("mole13").removeEventListener( "click", addScore5);
-		document.getElementById("mole13").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole14").addEventListener("click", function() {
-		document.getElementById("mole14").removeEventListener( "click", addScore5);
-		document.getElementById("mole14").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole15").addEventListener("click", function() {
-		document.getElementById("mole15").removeEventListener( "click", addScore5);
-		document.getElementById("mole15").removeEventListener( "click", addScore1);});
-
-		document.getElementById("mole21").addEventListener("click", function() {
-		document.getElementById("mole21").removeEventListener( "click", addScore5);
-		document.getElementById("mole21").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole22").addEventListener("click", function() {
-		document.getElementById("mole22").removeEventListener( "click", addScore5);
-		document.getElementById("mole22").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole23").addEventListener("click", function() {
-		document.getElementById("mole23").removeEventListener( "click", addScore5);
-		document.getElementById("mole23").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole24").addEventListener("click", function() {
-		document.getElementById("mole24").removeEventListener( "click", addScore5);
-		document.getElementById("mole24").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole25").addEventListener("click", function() {
-		document.getElementById("mole25").removeEventListener( "click", addScore5);
-		document.getElementById("mole25").removeEventListener( "click", addScore1);});
 	
-		document.getElementById("mole31").addEventListener("click", function() {
-		document.getElementById("mole31").removeEventListener( "click", addScore5);
-		document.getElementById("mole31").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole32").addEventListener("click", function() {
-		document.getElementById("mole32").removeEventListener( "click", addScore5);
-		document.getElementById("mole32").removeEventListener( "click", addScore1);});
-	
-		document.getElementById("mole33").addEventListener("click", function() {
-		document.getElementById("mole33").removeEventListener( "click", addScore5);
-		document.getElementById("mole33").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole34").addEventListener("click", function() {
-		document.getElementById("mole34").removeEventListener( "click", addScore5);
-		document.getElementById("mole34").removeEventListener( "click", addScore1);});
-		
-		document.getElementById("mole35").addEventListener("click", function() {
-		document.getElementById("mole35").removeEventListener( "click", addScore5);
-		document.getElementById("mole35").removeEventListener( "click", addScore1);});
-
-	// add this event listener to all of the buttons
-	for (  x = 0; x < 6;  x++){
-	document.getElementById("mole1" + x).addEventListener("click", function() {
-		document.getElementById("mole1" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole1" + x).removeEventListener( "click", addScore1);});
-	}
-	for(  x = 0; x < 6; x++){
-	document.getElementById("mole2" + x).addEventListener("click", function() {
-		document.getElementById("mole2" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole2" + x).removeEventListener( "click", addScore1);});
-	}
-	for(  x = 0; x < 6; x++){
-	document.getElementById("mole3" + x).addEventListener("click", function() {
-		document.getElementById("mole3" + x).removeEventListener( "click", addScore5);
-		document.getElementById("mole3" + x).removeEventListener( "click", addScore1);});
-	}
-*/
-		//Timer
-		
-	    
-
-   //  downloadTimer = setInterval(timeCheck,1000);
 	//Time Variable(45 Seconds)
 	timeleft = 45;
 	//	intervals
@@ -170,33 +87,7 @@ function start() {
 		
 } // end start function
 
-/*function addScore11() {
-var class = document.getElementById("mole11").className;
-if (class == "active"){
-currentScore++;
-}
-}*/
-// Add Score Functions
-//function addScore1() {
-		/*while (true) {
-			var x = document.getElementsByTagName("button");
-			if ( x === document.getElementByClassName("active").className) {
-			currentScore++;
-			}
-			else {
-			currentScore + 0;
-			}
-		}
-	document.getElementById("score").value = currentScore;
-}
-	
-	
 
-Add 5 Function
-function addScore5() {
-	currentScore = currentScore + 5
-}
-*/
 // adds one to the score on +1 moles
 function addScore1(){
 				currentScore++;
