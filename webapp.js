@@ -180,8 +180,29 @@ function coord(){
 		
 
 			
+function moveMoleAroundDeath() {
+		var coords = coord();
+//		document.getElementById("mole");
+//alert("hi");
+		document.getElementById(coords).className="deathmole";
+
+		document.getElementById(coords).addEventListener( "click", deathScore );
+		
+		setTimeout(removeMolesDeath, 500);
+}
+
+function removeMolesDeath() {
 	
+
+	var array = document.getElementsByClassName("deathmole");
 	
+	for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", deathScore);
+		array[i].setAttribute("class", "void");
+		
+	}
+}
+
 function removeMoles5() {
 	
 
