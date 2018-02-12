@@ -49,7 +49,7 @@ function start() {
 		if(timeleft == -1) {
 			clearInterval(t);
 			clearInterval(inter);
-			//clearInterval(inter5);
+			clearInterval(inter5);
 			alert("Time's Up!");
 			document.getElementById("start").disabled = false;
 		//makes HighScore
