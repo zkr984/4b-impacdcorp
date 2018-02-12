@@ -1,5 +1,5 @@
 // JavaScript Document
-//Defining Global Variables
+//Defining Global Variable
  var currentScore = 0;
 var downloadTimer;
 var inter;
@@ -35,34 +35,34 @@ var highScore = 0;
 
 //starts Game
 function start() {
-	
-	//Time Variable(45 Seconds)
+
+	currentScore =0;
 	timeleft = 45;
-	//	intervals
+		
 	inter = setInterval(moveMoleAround1,2000);
-//	inter5 = setInterval(moveMoleAround5, 5000);
+	inter5 = setInterval(moveMoleAround5, 5000);
 	var t=setInterval(countdown_timer, 1000); 
-//Timer
+
 	function countdown_timer()  {
 		document.getElementById("time").innerHTML = timeleft;
 		timeleft--;
 		if(timeleft == -1) {
-			//when timer end all intervals get cleared
 			clearInterval(t);
 			clearInterval(inter);
 			//clearInterval(inter5);
 			alert("Time's Up!");
-			
+			document.getElementById("start").disabled = false;
 		//makes HighScore
 			if 	(currentScore > highScore){
 	highScore = currentScore;
 	document.getElementById("highScore").value = highScore;
 	currentScore = 0;
 	}
+	currentScore = 0;
 
 	  }
 	}
-//not being used right now
+
 		var molePicker = 
 		[
 			"mole+1",
@@ -75,7 +75,7 @@ function start() {
 			"mole+0",
 			"mole+0",
 			"mole+0",
-			//"mole+5"  There are 5 +1 to make +1 more common. +5 not intergrated yet
+			//"mole+5"  There are 5 +1 to make +1 more common. 
 			];
 			
 		var randomNumber = Math.floor(Math.random()*molePicker.length);
@@ -84,11 +84,16 @@ function start() {
 		
 
 		//Random Place Generator
-		
+		setTimeout(disableButton,50)
 } // end start function
 
-
-// adds one to the score on +1 moles
+function disableButton()
+{
+	document.getElementById("start").disabled = true;
+	
+}
+	
+	
 function addScore1(){
 				currentScore++;
 				document.getElementById("score").innerHTML = currentScore;
@@ -99,12 +104,15 @@ function addScore1(){
 		
 	}
 			}
-		//adds 5 when a +5 mole is clicked
 function addScore5(){
 				currentScore = currentScore + 5;
 				document.getElementById("score").innerHTML = currentScore;
 			}
-//picks random coord for mole
+
+function deathScore(){
+	alert("YOU HIT ERIN! YOU LOST!");
+}
+
 function coord() {
 		var randomPlaceX = Math.floor(Math.random()*3)+1;
 		var randomPlaceY = Math.floor(Math.random()*5)+1;
@@ -112,59 +120,55 @@ function coord() {
 		return place;
 		}
 		
-		//creates a +5 mole
+		
 function moveMoleAround5() {
 			var coords = coord();
 	//		document.getElementById("mole");
 	//alert("hi");
-	//sets class
 			document.getElementById(coords).className="silver";
-//adds event listener
+
 			document.getElementById(coords).addEventListener( "click", addScore5 );
-			//removes all +5 moles after 0.5 seconds
+			
 			setTimeout(removeMoles5, 500);
 }
-//Creates a +1 mole		 
+		 
 function moveMoleAround1() {
 			var coords = coord();
 	//		document.getElementById("mole");
 	//alert("hi");
 	//alert(coords);
-	//sets class
 			document.getElementById(coords).setAttribute("class", "active");
-//adds event listener
+
 			document.getElementById(coords).addEventListener( "click", addScore1 );
-			//removes +1 moles after a second
+			
 			setTimeout(removeMoles1, 1000);
 }
 			
 	
-	//removes +5 moles
+	
 function removeMoles5() {
 	
-//gets array of all +5 moles
+
 	var array = document.getElementsByClassName("silver");
 	
-	for( var i = 0; i < array.length; i++) {
-		//loops through and removes all +1 moles
+	for( var i = 0; i < array.length; i++) {x
 		array[i].removeEventListener( "click", addScore5);
 		array[i].setAttribute("class", "void");
 		
 	}
 }
-//removes all +1 moles
+
 function removeMoles1() {
 	
-//gets array of all +1 moles
+
 	array = document.getElementsByClassName("active");
 		for( var i = 0; i < array.length; i++) {
-			//loops through and removes all +1 moles
 		array[i].removeEventListener( "click", addScore1);
 		array[i].setAttribute("class", "void");
 		
 	}
 }
-//highscroe variable
+
 var highScore = 0;
 /*
 function savecookies(){
@@ -187,11 +191,15 @@ function skinchange(page, skin){
 	alert(skin);
 	document.getElementsById(page).setAttribute('href', skin);
 	}*/
-	
-	//not currently being used
 	  if(timeleft <= 0){
     clearInterval(downloadTimer);
 	var saveScore = currentScore;
 	currentScore = 0;}
 	
-	
+	function clock(){
+		
+		
+		
+		
+		
+	}
