@@ -8,6 +8,7 @@
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 #game{
+	float:right;
 	align-content:center;
 	}
 body{
