@@ -5,6 +5,7 @@ var downloadTimer;
 var inter;
 var inter1;
 var inter5;
+var death;
 var timeleft;
 var saveScore;
 var array;
@@ -56,6 +57,19 @@ function moveMoleAround5() {
 			setTimeout(removeMoles5, 1000);
 }
 
+function moveMoleDeath() {
+			var coords = coord();
+	//		document.getElementById("mole");
+	//alert("hi");
+	//alert(coords);
+	//sets class
+			document.getElementById(coords).setAttribute("class", "deathmole");
+//adds event listener
+			document.getElementById(coords).addEventListener( "click", deathScore );
+			//removes +1 moles after a second
+			setTimeout(removeMolesDeath, 5000);
+}
+
 
 function moveMoleAround1() {
 			var coords = coord();
@@ -82,7 +96,7 @@ function start() {
 	inter = setInterval(moveMoleAround1,2000);
 
 	inter1 = setInterval(moveMoleAround11,1700);
-
+	death = setInterval(moveMoleDeath,15000);
 	inter5 = setInterval(moveMoleAround5, 5000);
 	var t=setInterval(countdown_timer, 1000); 
 
@@ -164,6 +178,7 @@ function addScore5(){
 
 function deathScore(){
 		alert("YOU HIT ERIN! YOU LOST!");
+		timeleft = 1;
 }
 function coord(){
 		var randomPlaceX = Math.floor(Math.random()*3)+1;
