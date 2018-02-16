@@ -163,7 +163,7 @@ function addScore5(){
 
 
 function deathScore(){
-	alert("YOU HIT ERIN! YOU LOST!");
+		alert("YOU HIT ERIN! YOU LOST!");
 }
 function coord(){
 		var randomPlaceX = Math.floor(Math.random()*3)+1;
@@ -253,7 +253,7 @@ function addScore11(){
 	
 
 
-//highscroe variable
+//highscore variable
 var highScore = 0;
 /*
 function savecookies(){
