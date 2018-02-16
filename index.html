@@ -4,15 +4,7 @@
 <meta charset="UTF-8">
 <title>Web App</title>
 <!--Stylesheet-->
-<link id= "1" rel="stylesheet" type="text/css" href="webapp.css">
-<!--<link id= "8" rel="stylesheet" type="text/css" href="Skin CSS/sfJack.css">
-<link id= "3" rel="stylesheet" type="text/css" href="Skin CSS/flatJack.css">
-<link id= "2" rel="stylesheet" type="text/css" href="Skin CSS/jennaMarbles.css">
-<link id= "7" rel="stylesheet" type="text/css" href="Skin CSS/lwiay.css">
-<link id= "5" rel="stylesheet" type="text/css" href="Skin CSS/barfJack.css">
-<link id= "6" rel="stylesheet" type="text/css" href="Skin CSS/emojiJack.css">
-<link id= "4" rel="stylesheet" type="text/css" href="Skin CSS/forwJack.css">
-<link id= "9" rel="stylesheet" type="text/css" href="Skin CSS/stacheJack.css">-->
+<link id= "pagestyle" rel="stylesheet" type="text/css" href="webapp.css">
 <!--JavaScript-->
 <script type="text/javascript" src="webapp.js">
 
@@ -36,27 +28,27 @@
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<!--<div id="shopmenu"><!-- Marks this part of the wesite for the link to identify-->
+<div id="shopmenu"><!-- Marks this part of the wesite for the link to identify-->
 <button><a href="#startpage">MENU</a></button>
 <h1 id="shop">SKINS</h1>
-<table id="skinshop" style="width:100%"><!--Sets up a template for each of the skins 
+<table id="skinshop" style="width:100%"><!--Sets up a template for each of the skins -->
   <tr>
-    <td><button onClick="document.getElementsByClassName('active').backgroundImage = url('images/jackcreep.jpg')"><img src="images/jackcreep.jpg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/jennamarbles.jpeg')"><img src="images/jennamarbles.jpeg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/flatjack.jpg')"><img src="images/flatjack.jpg"/></button></td>
+    <td><button onClick="skinChange('webapp')"><img src="images/jackcreep.jpg"/></button></td>
+    <td><button onClick="skinChange('jennaMarbles')"><img src="images/jennamarbles.jpeg"/></button></td>
+    <td><button onClick="skinChange(flatJack')"><img src="images/flatjack.jpg"/></button></td>
   </tr>
   <tr>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/forwjack.jpg')"><img src="images/forwjack.jpg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/barfjack.jpeg')"><img src="images/barfjack.jpeg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/emojijack.jpg')"><img src="images/emojijack.jpg"/></button></td>
+    <td><button onClick="skinChange('forwJack')"><img src="images/forwjack.jpg"/></button></td>
+    <td><button onClick="skinChange('barfJack')"><img src="images/barfjack.jpeg"/></button></td>
+    <td><button onClick="skinChange('emojiJack')"><img src="images/emojijack.jpg"/></button></td>
   </tr>
   <tr>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/lwiay.jpg')"><img src="images/lwiay.jpg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/godjack.jpg')"><img src="images/godjack.jpg"/></button></td>
-    <td><button onClick="document.getElementByClassName('active').style.backgroundImage = url('images/stachejack.jpeg')"><img src="images/stachejack.jpeg"/></button></td>
+    <td><button onClick="skinChange('lwiay')"><img src="images/lwiay.jpg"/></button></td>
+    <td><button onClick="skinChange('sfJack')"><img src="images/godjack.jpg"/></button></td>
+    <td><button onClick="skinChange('stacheJack')"><img src="images/stachejack.jpeg"/></button></td>
   </tr>
 </table>
-</div>-->
+</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <p align="left"><button id="startbutton"><a href="#startpage">Menu</a></button></p><!-- This button links to the menu-->
