@@ -177,31 +177,6 @@ function coord(){
 
 //Creates a +1 mole		 
 
-		
-
-			
-function moveMoleAroundDeath() {
-		var coords = coord();
-//		document.getElementById("mole");
-//alert("hi");
-		document.getElementById(coords).className="deathmole";
-
-		document.getElementById(coords).addEventListener( "click", deathScore );
-		
-		setTimeout(removeMolesDeath, 500);
-}
-
-function removeMolesDeath() {
-	
-
-	var array = document.getElementsByClassName("deathmole");
-	
-	for( var i = 0; i < array.length; i++) {
-		array[i].removeEventListener( "click", deathScore);
-		array[i].setAttribute("class", "void");
-		
-	}
-}
 
 function removeMoles5() {
 	
@@ -221,6 +196,18 @@ function removeMoles1() {
 	array = document.getElementsByClassName("active");
 		for( var i = 0; i < array.length; i++) {
 		array[i].removeEventListener( "click", addScore1);
+		array[i].setAttribute("class", "void");
+		
+	}
+}
+
+function removeMolesDeath() {
+	
+
+	array = document.getElementsByClassName("deathmole");
+	
+	for( var i = 0; i < array.length; i++) {
+		array[i].removeEventListener( "click", deathScore);
 		array[i].setAttribute("class", "void");
 		
 	}
