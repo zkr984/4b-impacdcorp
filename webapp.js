@@ -10,33 +10,29 @@ var timeleft;
 var saveScore;
 var array;
 var highScore = 0;
+var coords;
+var total = 0;
 
-//Time Check/Timer Function
+
 // Random Function
-//Time Check Function
+
+function coord(){
+		var randomPlaceX = Math.floor(Math.random()*3)+1;
+		var randomPlaceY = Math.floor(Math.random()*5)+1;
+		var place = "mole" + randomPlaceX + randomPlaceY;
+		return place;
+		}
 
 
-/*function timeCheck(){
-   for(timeLeft >0, timeLeft--) {
-    timeleft--;
-	  document.getElementById("countdowntimer").textContent = timeleft;
-
-	    if(timeleft <= 0){
-			//stops timer
-    clearInterval(downloadTimer);
-	//saves score
-	var saveScore = currentScore;
-	currentScore = 0;
-
-
-}
-}
-*/
 function moveMoleAround11() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
-	//alert(coords);
+				var coord1 = coord();
+			if (coord1 == coords){
+				coords = coord();
+				}
+				else{
+					coords = coord1;
+					}
+			
 	//sets class
 			document.getElementById(coords).setAttribute("class", "active1");
 //adds event listener
@@ -46,36 +42,47 @@ function moveMoleAround11() {
 }
 
 function moveMoleAround5() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
+				var coord1 = coord();
+			if (coord1 == coords){
+				coords = coord();
+				}
+				else{
+					coords = coord1;
+					}
 	//sets class
 			document.getElementById(coords).className="silver";
 //adds event listener
 			document.getElementById(coords).addEventListener( "click", addScore5 );
-			//removes all +5 moles after 0.5 seconds
+			//removes all +5 moles after 1 second
 			setTimeout(removeMoles5, 1000);
 }
 
 function moveMoleDeath() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
-	//alert(coords);
+				var coord1 = coord();
+			if (coord1 == coords){
+				coords = coord();
+				}
+				else{
+				coords = coord1;
+					}
 	//sets class
+
 			document.getElementById(coords).setAttribute("class", "deathmole");
 //adds event listener
 			document.getElementById(coords).addEventListener( "click", deathScore );
 			//removes +1 moles after a second
-			setTimeout(removeMolesDeath, 5000);
+			setTimeout(removeMolesDeath, 1000);
 }
 
 
 function moveMoleAround1() {
-			var coords = coord();
-	//		document.getElementById("mole");
-	//alert("hi");
-	//alert(coords);
+			var coord1 = coord();
+			if (coord1 == coords){
+				coords = coord();
+				}
+				else{
+			coords = coord1;
+					}
 	//sets class
 			document.getElementById(coords).setAttribute("class", "active");
 //adds event listener
@@ -104,6 +111,7 @@ function start() {
 		document.getElementById("time").innerHTML = timeleft;
 		timeleft--;
 		if(timeleft == -1) {
+			total = currentScore + total;
 			clearInterval(t);
 			clearInterval(inter);
 			clearInterval(inter1);
@@ -114,6 +122,7 @@ function start() {
 			if 	(currentScore > highScore){
 	highScore = currentScore;
 	document.getElementById("highScore").innerHTML = highScore;
+		document.getElementById("totalScore").innerHTML = total;
 	currentScore = 0;
 	}
 	currentScore = 0;
@@ -180,12 +189,6 @@ function deathScore(){
 		alert("YOU HIT ERIN! YOU LOST!");
 		timeleft = 1;
 }
-function coord(){
-		var randomPlaceX = Math.floor(Math.random()*3)+1;
-		var randomPlaceY = Math.floor(Math.random()*5)+1;
-		var place = "mole" + randomPlaceX + randomPlaceY;
-		return place;
-		}
 		
 
 		//creates a +5 mole
