@@ -16,39 +16,59 @@
 </head>
 <!--Add your HTML here-->
 <body>
-<div id="startpage"><!--Identifies the buttons as the start page, allowing for broader CSS -->
-<p id="introp">Welcome to the game of: WHAC-A-JACC</p>
-<button id="linkbutton"><a href="#game">START</a></button><!--Links the button to the game, works with text adventure style -->
-<button id="menubutton"><a href="#shop">SHOP</a></button><!-- Links the button to the skinshop-->
-<button id="tutorialbutton"><a href="#tutorial">TUTORIAL</a></button>
-<br>
-<button onClick="savecookies()">SAVE SCORE</button>
-<!--<button onClick="loadcookies()">LOAD COOKIES</button>
-<button onClick="clearcookies()">CLEAR COOKIES</button>-->
-</div>
+	<div id="startpage"><!--Identifies the buttons as the start page, allowing for broader CSS -->
+		<p id="introp">Welcome to the game of: WHAC-A-JACC</p>
+		<!--Links the button to the game, works with text adventure style -->
+		<button id="linkbutton"><a href="#game">START</a></button>
+		<!-- Links the button to the skinshop-->
+		<button id="menubutton"><a href="#shop">SHOP</a></button>
+		<button id="tutorialbutton"><a href="#tutorial">TUTORIAL</a></button>
+		<br>
+		<button onClick="savecookies()">SAVE SCORE</button>
+		<!--<button onClick="loadcookies()">LOAD COOKIES</button>
+		<button onClick="clearcookies()">CLEAR COOKIES</button>-->
+	</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div id="shopmenu"><!-- Marks this part of the wesite for the link to identify-->
-<button><a href="#startpage">MENU</a></button>
-<h1 id="shop">SKINS</h1>
-<table id="skinshop" style="width:100%"><!--Sets up a template for each of the skins -->
-  <tr>
-    <td><button onClick="skinChange('webapp')"><img src="images/jackcreep.jpg"/></button></td>
-    <td><button onClick="skinChange('jennaMarbles')"><img src="images/jennamarbles.jpeg"/></button></td>
-    <td><button onClick="skinChange(flatJack')"><img src="images/flatjack.jpg"/></button></td>
-  </tr>
-  <tr>
-    <td><button onClick="skinChange('forwJack')"><img src="images/forwjack.jpg"/></button></td>
-    <td><button onClick="skinChange('barfJack')"><img src="images/barfjack.jpeg"/></button></td>
-    <td><button onClick="skinChange('emojiJack')"><img src="images/emojijack.jpg"/></button></td>
-  </tr>
-  <tr>
-    <td><button onClick="skinChange('lwiay')"><img src="images/lwiay.jpg"/></button></td>
-    <td><button onClick="skinChange('sfJack')"><img src="images/godjack.jpg"/></button></td>
-    <td><button onClick="skinChange('stacheJack')"><img src="images/stachejack.jpeg"/></button></td>
-  </tr>
-</table>
-</div>
+	<div id="shopmenu"><!-- Marks this part of the wesite for the link to identify-->
+		<button><a href="#startpage">MENU</a></button>
+		<h1 id="shop">SKINS</h1>
+		<table id="skinshop" style="width:100%"><!--Sets up a template for each of the skins -->
+ 		<tr>
+    		<td>
+				<button onClick="skinChange('webapp')"><img src="images/jackcreep.jpg"/></button>
+			</td>
+    		<td>
+				<button onClick="skinChange('jennaMarbles')"><img src="images/jennamarbles.jpeg"/></button>
+			</td>
+    		<td>
+				<button onClick="skinChange(flatJack')"><img src="images/flatjack.jpg"/></button>
+			</td>
+  		</tr>
+  		<tr>
+    		<td>
+				<button onClick="skinChange('forwJack')"><img src="images/forwjack.jpg"/></button>
+			</td>
+  	  	<td>
+			<button onClick="skinChange('barfJack')"><img src="images/barfjack.jpeg"/></button>
+		</td>
+    	<td>
+			<button onClick="skinChange('emojiJack')"><img src="images/emojijack.jpg"/></button>
+		</td>
+  		</tr>
+  		<tr>
+    		<td>
+				<button onClick="skinChange('lwiay')"><img src="images/lwiay.jpg"/></button>
+			</td>
+    		<td>
+				<button onClick="skinChange('sfJack')"><img src="images/godjack.jpg"/></button>
+			</td>
+   		 	<td>	
+				<button onClick="skinChange('stacheJack')"><img src="images/stachejack.jpeg"/></button>
+			</td>
+  			</tr>
+		</table>
+	</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <p align="left"><button id="startbutton"><a href="#startpage">Menu</a></button></p><!-- This button links to the menu-->
