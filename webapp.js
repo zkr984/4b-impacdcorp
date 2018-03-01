@@ -1,6 +1,6 @@
 // JavaScript Document
 //Defining Global Variable
- var currentScore = 0;
+var currentScore = 0;
 var downloadTimer;
 var inter;
 var inter1;
@@ -21,23 +21,23 @@ function coord(){
 		var randomPlaceY = Math.floor(Math.random()*5)+1;
 		var place = "mole" + randomPlaceX + randomPlaceY;
 		return place;
-		}
+}
 
 
 function moveMoleAround11() {
-				var coord1 = coord();
+			var coord1 = coord();
 			if (coord1 == coords){
 				coords = coord();
-				}
-				else{
+			}
+			else{
 					coords = coord1;
-					}
+}
 			
-	//sets class
+//sets class
 			document.getElementById(coords).setAttribute("class", "active1");
 //adds event listener
 			document.getElementById(coords).addEventListener( "click", addScore11 );
-			//removes +1 moles after a second
+//removes +1 moles after a second
 			setTimeout(removeMoles11, 1500);
 }
 
@@ -45,7 +45,7 @@ function moveMoleAround5() {
 				var coord1 = coord();
 			if (coord1 == coords){
 				coords = coord();
-				}
+			}
 				else{
 					coords = coord1;
 					}
@@ -58,19 +58,19 @@ function moveMoleAround5() {
 }
 
 function moveMoleDeath() {
-				var coord1 = coord();
+			var coord1 = coord();
 			if (coord1 == coords){
 				coords = coord();
-				}
+			}
 				else{
 				coords = coord1;
-					}
-	//sets class
+}
+//sets class
 
 			document.getElementById(coords).setAttribute("class", "deathmole");
 //adds event listener
 			document.getElementById(coords).addEventListener( "click", deathScore );
-			//removes +1 moles after a second
+//removes +1 moles after a second
 			setTimeout(removeMolesDeath, 1000);
 }
 
@@ -79,22 +79,22 @@ function moveMoleAround1() {
 			var coord1 = coord();
 			if (coord1 == coords){
 				coords = coord();
-				}
+			}
 				else{
 			coords = coord1;
-					}
-	//sets class
+}
+//sets class
 			document.getElementById(coords).setAttribute("class", "active");
 //adds event listener
 			document.getElementById(coords).addEventListener( "click", addScore1 );
-			//removes +1 moles after a second
+//removes +1 moles after a second
 			setTimeout(removeMoles1, 1500);
 }
 //starts Game
 function start() {
 
 	currentScore = 0;
-	//Time Variable(45 Seconds)
+//Time Variable(45 Seconds)
 
 
 
@@ -118,7 +118,7 @@ function start() {
 			clearInterval(inter5);
 			alert("Time's Up!");
 			document.getElementById("start").disabled = false;
-		//makes HighScore
+//makes HighScore
 			if 	(currentScore > highScore){
 	highScore = currentScore;
 	document.getElementById("highScore").innerHTML = highScore;
