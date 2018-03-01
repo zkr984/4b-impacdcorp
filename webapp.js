@@ -150,7 +150,7 @@ function start() {
 	
 		
 
-		//Random Place Generator
+//Random Place Generator
 		setTimeout(disableButton,50)
 } // end start function
 
